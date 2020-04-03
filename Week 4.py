@@ -35,3 +35,19 @@
 # print(student_grade("Paige", 92))
 # print(student_grade("Jesse", 85))
 
+# empty string is " "
+
+# def double_word(word):
+#     return str(word*2) + str(len(word)*2)
+
+# print(double_word("hello")) # Should return hellohello10
+# print(double_word("abc"))   # Should return abcabc6
+# print(double_word(""))      # Should return 0
+
+# def double_word(word):
+#     return word*2 + str(len(word*2))
+
+# print(double_word("hello")) # Should return hellohello10
+# print(double_word("abc"))   # Should return abcabc6
+# print(double_word(""))      # Should return 0
+
