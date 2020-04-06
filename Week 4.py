@@ -244,11 +244,11 @@
 # # using as many lines of code as your chosen method requires.
 
 # for filename in filenames:
-#     if filename.endswith("hpp"):
-#         newfilenames = [filename.replace('hpp','h') for filename in filenames]
+#     if ".hpp" in filename:
+#         newfilenames = [filename.replace('.hpp','.h') for filename in filenames]
 
 # print(newfilenames) 
-# # Should be ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
+# Should be ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
 
 # The permissions of a file in a Linux system are split into three sets of three permissions: read, write, and execute for the owner, group, and others. 
 # Each of the three values can be expressed as an octal number summing each permission, with 4 corresponding to read, 2 to write, and 1 to execute. 
@@ -260,15 +260,13 @@
 # def octal_to_string(octal):
 #     result = ""
 #     value_letters = [(4,"r"),(2,"w"),(1,"x")]
-#     # Iterate over each of the digits in octal
-#     for ___ in [int(n) for n in str(octal)]:
-#         # Check for each of the permissions values
+#     for number in [int(n) for n in str(octal)]:
 #         for value, letter in value_letters:
-#             if ___ >= value:
-#                 result += ___
-#                 ___ -= value
+#             if number >= value:
+#                 result += letter
+#                 number -= value
 #             else:
-#                 ___
+#                 result += "-"
 #     return result
     
 # print(octal_to_string(755)) # Should be rwxr-xr-x
@@ -279,15 +277,16 @@
 # Let's create a function that turns text into pig latin: 
 # a simple text transformation that modifies each word moving the first character to the end and appending "ay" to the end. For example, python ends up as ythonpay.
 
-def pig_latin(text):
-  say = ""
-  # Separate the text into words
-  words = text.split()
-  for word in words:
-    # Create the pig latin word and add it to the list
-    word = [text.replace([0],[-1]) for word in text]
-    # Turn the list back into a phrase
-  return word
-		
-print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
-print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
+# def pig_latin(text):
+#   say = ""
+#   # Separate the text into words
+#   words = text.split()
+#   for word in words:
+#     # Create the pig latin word and add it to the list
+#     words = word[1:] + word[:1] + "ay "
+#     say += "".join(words)
+#   return say
+#     # Turn the list back into a phrase
+
+# print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
+# print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
