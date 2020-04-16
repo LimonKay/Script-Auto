@@ -315,3 +315,75 @@
 # Chapter 3 now starts on page 24
 # What are the current contents of the dictionary?
 # Is there a Chapter 5?
+
+# cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+# for animal, limbs in cool_beasts.items():
+#     print("{} have {}".format(animal, limbs))
+
+
+# wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+# for key, value in wardrobe.items():
+#     for color in value:
+# 	    print("{} {}".format(color, key))
+
+# def email_list(domains):
+# 	emails = []
+# 	for key, value in domains.items():
+# 	  for user in users:
+# 	    emails.items()
+# 	return(emails)
+
+# print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
+
+# Friends = {"Ashley":1, "Jenna":2, "Kaitlin":3}
+# print(Friends)
+
+# for friend in Friends:
+#     print(friend)
+
+# for friend, number in Friends.items():
+#     print("{} is friend number {}".format(friend, number))
+
+# print(Friends.keys())
+# print(Friends.values()) 
+
+# In Python, a dictionary can only hold a single value for a given key. To workaround this, 
+# our single value can be a list containing multiple values. 
+# Here we have a dictionary called "wardrobe" with items of clothing and their colors. 
+# Fill in the blanks to print a line for each item of clothing with each color, for example: "red shirt", "blue shirt", and so on
+
+# wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+# for clothe, color in wardrobe.items():
+# 	for i in color:
+# 		print("{} {}".format(i, clothe))
+
+# def email_list(domains):
+#     emails = []
+#     for email, users in domains.items():
+#         for user in users:
+#             emails.append(user + "@" + email)
+#     return(emails)
+
+# print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
+
+# wardrobe = {'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black']}
+# new_items = {'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}
+# wardrobe.update(new_items)
+# print(wardrobe)
+
+def add_prices(basket):
+	# Initialize the variable that will be used for the calculation
+	total = 0
+	# Iterate through the dictionary items
+	for ___:
+		# Add each price to the total calculation
+		# Hint: how do you access the values of
+		# dictionary items?
+		total += ___
+	# Limit the return value to 2 decimal places
+	return round(total, 2)  
+
+groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59, 
+	"coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
+
+print(add_prices(groceries)) # Should print 28.44
